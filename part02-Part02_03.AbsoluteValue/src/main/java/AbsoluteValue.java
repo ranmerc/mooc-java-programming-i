@@ -5,6 +5,12 @@ public class AbsoluteValue {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        int integer = Integer.valueOf(scanner.nextLine());
+        
+        if(integer < 0) {
+            System.out.print(integer * -1);
+        } else {
+            System.out.print(integer);
+        }
     }
 }
